@@ -1,0 +1,15 @@
+{
+    "name": "zombieplus",
+    "version": "1.0.0",
+    "description": "Projeto de testes automatizados com NightWatchJs",
+    "main": "index.js",
+    "scripts": {
+        "test": "./node_modules/.bin/nightwatch "
+    },
+    "author": "@wendreof",
+    "license": "MIT",
+    "dependencies": {
+        "chromedriver": "^73.0.1",
+        "nightwatch": "^1.2.4"
+    }
+}
