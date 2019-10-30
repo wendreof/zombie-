@@ -1,3 +1,5 @@
+//require('babel-core/register')
+
 const chromedriver = require('chromedriver')
 
 module.exports = {
