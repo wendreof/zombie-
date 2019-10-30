@@ -2,14 +2,18 @@
     "name": "zombieplus",
     "version": "1.0.0",
     "description": "Projeto de testes automatizados com NightWatchJs",
-    "main": "index.js",
+    "main": "tests/login.test.js",
     "scripts": {
-        "test": "./node_modules/.bin/nightwatch "
+        "test": "./node_modules/.bin/nightwatch",
+        "start": "nodemon tests/login.test.js"
     },
     "author": "@wendreof",
     "license": "MIT",
     "dependencies": {
-        "chromedriver": "^73.0.1",
+        "chromedriver": "^78.0.0",
         "nightwatch": "^1.2.4"
+    },
+    "devDependencies": {
+        "nodemon": "^1.19.4"
     }
 }
