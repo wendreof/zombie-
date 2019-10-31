@@ -1,7 +1,7 @@
 module.exports = {
-    'login com sucesso': function(browser) {
+    'Success login': (browser) => {
 
-        var userInfo = `.user .info span`;
+        let userInfo = `.user .info span`;
 
         browser
         //.resizeWindow(1366, 768)
