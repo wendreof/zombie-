@@ -1,10 +1,19 @@
 module.exports = {
-    'Wrong password': (browser) => {
 
+    // before: (browser) => {
+    //     browser
+    //     //.resizeWindow(1366, 768)
+    // },
+
+    after: (browser) => {
+        browser
+            .end();
+    },
+
+    'Wrong password': (browser) => {
         let alert = `.alert-danger`;
 
         browser
-        //.resizeWindow(1366, 768)
             .url('localhost:5000/login')
             .waitForElementVisible('.card-login', 3000)
             .setValue('input[name=email]', 'zumbi@dospalmares.com')
@@ -17,7 +26,6 @@ module.exports = {
         let alert = `.alert-danger`;
 
         browser
-        //.resizeWindow(1366, 768)
             .url('localhost:5000/login')
             .waitForElementVisible('.card-login', 3000)
             .setValue('input[name=email]', 'zumbi@zumbi.com')
@@ -31,7 +39,6 @@ module.exports = {
         let alert = `.alert-info`;
 
         browser
-        //.resizeWindow(1366, 768)
             .url('localhost:5000/login')
             .waitForElementVisible('.card-login', 3000)
             .setValue('input[name=email]', '')
@@ -44,7 +51,6 @@ module.exports = {
         let alert = `.alert-info`;
 
         browser
-        //.resizeWindow(1366, 768)
             .url('localhost:5000/login')
             .waitForElementVisible('.card-login', 3000)
             .setValue('input[name=email]', 'zumbi@dospalmares.com')
@@ -52,6 +58,5 @@ module.exports = {
             .click('.login-button')
             .waitForElementVisible(alert, 3000)
             .assert.containsText(alert, 'Opps. Cadê a senha?')
-            .end();
     }
 }
