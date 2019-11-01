@@ -14,11 +14,7 @@ module.exports = {
         let login = browser.page.login()
 
         login
-            .navigate()
-            .waitForElementVisible('@form', 3000)
-            .setValue('@emailInput', 'zumbi@dospalmares.com')
-            .setValue('@passInput', '123abc')
-            .click('@loginButton')
+            .with('zumbi@dospalmares.com', '123abc')
             .waitForElementVisible('@alertDanger', 3000)
             .assert.containsText('@alertDanger', 'Usuário e/ou senha inválidos')
     },
@@ -27,11 +23,7 @@ module.exports = {
         let login = browser.page.login()
 
         login
-            .navigate()
-            .waitForElementVisible('@form', 3000)
-            .setValue('@emailInput', 'zumbi@zumbi.com')
-            .setValue('@passInput', '123abc')
-            .click('@loginButton')
+            .with('zumbi@zumbi.com', '123abc')
             .waitForElementVisible('@alertDanger', 3000)
             .assert.containsText('@alertDanger', 'Usuário e/ou senha inválidos')
 
@@ -41,11 +33,7 @@ module.exports = {
         let login = browser.page.login()
 
         login
-            .navigate()
-            .waitForElementVisible('@form', 3000)
-            .setValue('@emailInput', '')
-            .setValue('@passInput', '123abc')
-            .click('@loginButton')
+            .with('', '123abc')
             .waitForElementVisible('@alertInfo', 3000)
             .assert.containsText('@alertInfo', 'Opps. Cadê o email?')
     },
@@ -54,11 +42,7 @@ module.exports = {
         let login = browser.page.login()
 
         login
-            .navigate()
-            .waitForElementVisible('@form', 3000)
-            .setValue('@emailInput', 'zumbi@dospalmares.com')
-            .setValue('@passInput', '')
-            .click('@loginButton')
+            .with('zumbi@dospalmares.com', '')
             .waitForElementVisible('@alertInfo', 3000)
             .assert.containsText('@alertInfo', 'Opps. Cadê a senha?')
     }
