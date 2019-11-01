@@ -1,17 +1,18 @@
 module.exports = {
     'Success login': (browser) => {
 
-        let userInfo = `.user .info span`;
+        let login = browser.page.login()
+        let sidebar = browser.page.sidebar()
 
-        browser
-        //.resizeWindow(1366, 768)
-            .url('localhost:5000/login')
-            .waitForElementVisible('.card-login', 3000)
-            .setValue('input[name=email]', 'zumbi@dospalmares.com')
-            .setValue('input[name=password]', 'pwd123')
-            .click('.login-button')
-            .waitForElementVisible(userInfo, 3000)
-            .assert.containsText(userInfo, 'Quilombo')
+        login.navigate()
+            .waitForElementVisible('@form', 3000)
+            .setValue('@emailInput', 'zumbi@dospalmares.com')
+            .setValue('@passInput', 'pwd123')
+            .click('@loginButton')
+
+        sidebar
+            .waitForElementVisible('@userInfo', 3000)
+            .assert.containsText('@userInfo', 'Quilombo')
             .end();
     }
 }
