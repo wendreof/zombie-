@@ -5,9 +5,9 @@
 
   <testsuite name="login.without_sucess.test"
     errors="0" failures="0" hostname="" id="" package="login" skipped="0"
-    tests="4" time="23.86" timestamp="">
+    tests="4" time="32.89" timestamp="">
   
-    <testcase name="Wrong password" classname="login.without_sucess.test" time="18.64" assertions="3">
+    <testcase name="Wrong password" classname="login.without_sucess.test" time="20.30" assertions="3">
 
     
 
@@ -16,7 +16,7 @@
     
     </testcase>
   
-    <testcase name="Wrong e-mail" classname="login.without_sucess.test" time="2.757" assertions="3">
+    <testcase name="Wrong e-mail" classname="login.without_sucess.test" time="4.995" assertions="3">
 
     
 
@@ -25,7 +25,7 @@
     
     </testcase>
   
-    <testcase name="E-mail blank" classname="login.without_sucess.test" time="1.094" assertions="3">
+    <testcase name="E-mail blank" classname="login.without_sucess.test" time="3.603" assertions="3">
 
     
 
@@ -34,7 +34,7 @@
     
     </testcase>
   
-    <testcase name="Password blank" classname="login.without_sucess.test" time="1.369" assertions="3">
+    <testcase name="Password blank" classname="login.without_sucess.test" time="3.985" assertions="3">
 
     
 
