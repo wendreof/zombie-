@@ -10,6 +10,5 @@ module.exports = {
         sidebar
             .waitForElementVisible('@userInfo', 3000)
             .assert.containsText('@userInfo', 'Quilombo')
-            .end();
     }
 }

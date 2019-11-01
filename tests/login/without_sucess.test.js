@@ -1,15 +1,5 @@
 module.exports = {
 
-    // before: (browser) => {
-    //     browser
-    //     //.resizeWindow(1366, 768)
-    // },
-
-    after: (browser) => {
-        browser
-            .end();
-    },
-
     'Wrong password': (browser) => {
         let login = browser.page.login()
 
