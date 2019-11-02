@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="0"
-            failures="0"
+<testsuites errors="1"
+            failures="1"
             tests="2">
 
   <testsuite name="new_movie.test"
-    errors="0" failures="0" hostname="" id="" package="new_movie.test" skipped="0"
-    tests="2" time="0.03600" timestamp="">
+    errors="1" failures="1" hostname="" id="" package="new_movie.test" skipped="0"
+    tests="2" time="8.502" timestamp="">
   
-    <testcase name="New movie" classname="new_movie.test" time="0.008000" assertions="0">
+    <testcase name="New movie" classname="new_movie.test" time="0.01300" assertions="0">
     </testcase>
   
-    <testcase name="When I try to register a movie" classname="new_movie.test" time="0.02800" assertions="0">
+    <testcase name="When I try to register a movie" classname="new_movie.test" time="8.489" assertions="1">  <failure message="Timed out while waiting for element &lt;#movie-form&gt; to be present for 3000 milliseconds. - expected [0;32m&#34;visible&#34;[0m but got: [0;31m&#34;not found&#34;[0m">    at Object.When I try to register a movie (/home/wlf/Desktop/Sync/curso-node-zombie/qaninja/zombieplus/tests/sign-up/new_movie.test.js:27:14)</failure>
+
+    
     </testcase>
   
 
