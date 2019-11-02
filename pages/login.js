@@ -6,6 +6,16 @@ var loginActions = {
             .setValue('@emailInput', email)
             .setValue('@passInput', pwd)
             .click('@loginButton')
+    },
+    expectAlertDanger: function(text) {
+        return this
+            .waitForElementVisible('@alertDanger', 3000)
+            .assert.containsText('@alertDanger', text)
+    },
+    expectAlertInfo: function(text) {
+        return this
+            .waitForElementVisible('@alertInfo', 3000)
+            .assert.containsText('@alertInfo', text)
     }
 }
 

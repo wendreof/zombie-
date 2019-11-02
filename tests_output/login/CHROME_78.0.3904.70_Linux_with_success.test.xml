@@ -3,11 +3,11 @@
             failures="0"
             tests="1">
 
-  <testsuite name="login.with_success"
+  <testsuite name="login.with_success.test"
     errors="0" failures="0" hostname="" id="" package="login" skipped="0"
-    tests="1" time="18.37" timestamp="">
+    tests="1" time="18.44" timestamp="">
   
-    <testcase name="Success login" classname="login.with_success" time="18.37" assertions="3">
+    <testcase name="Success login" classname="login.with_success.test" time="18.44" assertions="3">
 
     
 

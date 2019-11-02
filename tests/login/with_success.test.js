@@ -8,7 +8,6 @@ module.exports = {
             .with('zumbi@dospalmares.com', 'pwd123')
 
         sidebar
-            .waitForElementVisible('@userInfo', 3000)
-            .assert.containsText('@userInfo', 'Quilombo')
+            .expectLoggedUser('Quilombo')
     }
 }
