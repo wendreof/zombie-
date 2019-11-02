@@ -20,7 +20,14 @@ module.exports = {
         }
 
         let login = browser.page.login()
-        login.with('zumbi@dospalmares.com.br', 'pwd123')
+
+        let sidebar = browser.page.sidebar()
+
+        login
+            .with('zumbi@dospalmares.com', 'pwd123')
+
+        sidebar
+            .expectLoggedUser('Quilombo')
     },
 
     'When I try to register a movie': function(browser) {
@@ -29,5 +36,7 @@ module.exports = {
         movie
             .click('@addButton')
             .waitForElementVisible('@movieForm', 3000)
+            .setValue('@titleInput', movieData.title)
+            .pause(5000)
     }
 }
