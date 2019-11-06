@@ -1,5 +1,4 @@
-[![GitHub issues](https://img.shields.io/github/issues/wendreof/zombie-)]
-(https://github.com/thiagolioy/marvelapp/issues)
+[![GitHub issues](https://img.shields.io/github/issues/wendreof/zombie-)](https://github.com/thiagolioy/marvelapp/issues)
 
 
 # Just run it!
