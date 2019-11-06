@@ -8,7 +8,7 @@
 -------
 <p align="center">
     <a href="#motivation">Motivation</a> &bull;
-    <a href="#installation">Installation</a>&bull;
+    <a href="#installation">Installation</a> &bull;
     <a href="#starting">Starting</a>
 </p>
 
