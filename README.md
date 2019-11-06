@@ -1,4 +1,4 @@
-https://img.shields.io/github/issues/wendreof/zombie-
+[![GitHub issues](https://img.shields.io/github/issues/wendreof/zombie-)
 
 
 # Just run it!
