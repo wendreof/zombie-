@@ -9,10 +9,8 @@
 <p align="center">
     <a href="#motivation">Motivation</a> &bull;
     <a href="#installation">Installation</a>&bull;
-    <a href="#howtostart">How to start</a>
- ## How to start
+    <a href="#starting">Starting</a>
 </p>
--------
 
 
 ## Installation
@@ -25,11 +23,12 @@
 
 - `docker run --name zombie-web --network=skynet -e "VUE_APP_API=http://localhost:3000" -p 5000:5000 -d papitoio/zombie-web`
 
-### 5
-- `sudo yarn run test`
-
-## How to start
+## Starting
 - `docker start pgadmin`
 - `docker start pgdb`
 - `docker start zombie-api`
 - `docker start zombie-web`
+- `sudo yarn run test`
+
+## License
+This project is licensed under the terms of the MIT license. See the LICENSE file.
