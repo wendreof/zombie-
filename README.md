@@ -12,6 +12,8 @@
     <a href="#starting">Starting</a>
 </p>
 
+## Motivation
+This repository is about automated tests in NodeJS with Docker, Jenkins and NightwatchJS framework
 
 ## Installation
 
