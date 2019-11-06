@@ -1,3 +1,5 @@
+https://img.shields.io/github/issues/wendreof/zombie-
+
 
 # Just run it!
 `docker start pgadmin`
