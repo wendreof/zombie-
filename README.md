@@ -1,24 +1,41 @@
+# ZombiePlus
 
-# Just run it!
-`docker start pgadmin`
-`docker start pgdb`
-`docker start zombie-api`
-`docker start zombie-web`
- 
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fwendreolf)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fwendreof%2Fzombie-%2F)
+[![GitHub issues](https://img.shields.io/github/issues/wendreof/zombie-)](https://github.com/wendreof/zombie-/issues)
+[![GitHub forks](https://img.shields.io/github/forks/wendreof/zombie-)](https://github.com/wendreof/zombie-/network)
+[![GitHub stars](https://img.shields.io/github/stars/wendreof/zombie-)](https://github.com/wendreof/zombie-/stargazers)
 
-# 1st builds
+-------
+<p align="center">
+    <a href="#motivation">Motivation</a> &bull;
+    <a href="#installation">Installation</a> &bull;
+    <a href="#starting">Starting</a>
+</p>
 
+<<<<<<< HEAD
 # 1
 `docker run --name pgadmin --network=skynet -p 15432:80 -e "PGADMIN_DEFAULT_EMAIL=root@qaninja.io" -e "PGADMIN_DEFAULT_PASSWORD=qaninja" -d dpage/pgadmin4'`
+=======
+## Motivation
+This repository is about automated tests in NodeJS with Docker, Jenkins and NightwatchJS framework.
+>>>>>>> 1ebce6771274a8591414ac05a934774a3a959b2e
 
-# 2
-`docker run --name pgdb --network=skynet -e "POSTGRES_PASSWORD=qaninja" -p 5432:5432 -v var/lib/postgresql/data -d postgres`
+## Installation
 
-# 3
-`docker run --name zombie-api --network=skynet -e "DATABASE=pgdb" -p 3000:3000 -d papitoio/zombie-api`
+- `docker run --name pgadmin --network=skynet -p 15432:80 -e "PGADMIN_DEFAULT_EMAIL=root@qaninja.io" -e "PGADMIN_DEFAULT_PASSWORD=qaninja" -d dpage/pgadmin4`
 
-# 4
-`docker run --name zombie-web --network=skynet -e "VUE_APP_API=http://localhost:3000" -p 5000:5000 -d papitoio/zombie-web`
+- `docker run --name pgdb --network=skynet -e "POSTGRES_PASSWORD=qaninja" -p 5432:5432 -v var/lib/postgresql/data -d postgres`
 
-# 5
-`sudo yarn run test`
+- `docker run --name zombie-api --network=skynet -e "DATABASE=pgdb" -p 3000:3000 -d papitoio/zombie-api`
+
+- `docker run --name zombie-web --network=skynet -e "VUE_APP_API=http://localhost:3000" -p 5000:5000 -d papitoio/zombie-web`
+
+## Starting
+- `docker start pgadmin`
+- `docker start pgdb`
+- `docker start zombie-api`
+- `docker start zombie-web`
+- `sudo yarn run test`
+
+## License
+This project is licensed under the terms of the MIT license. See the LICENSE file.
