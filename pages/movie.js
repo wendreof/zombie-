@@ -1,9 +1,26 @@
+var createActions = {
+    createForm: function() {
+        return this
+            .click('@addButton')
+            .waitForElementVisible('@movieForm', 3000)
+    },
+    selectStatus: function(status) {
+        return this
+            .click('@statusSelect')
+            .useXpath()
+            .waitForElementVisible(`//li//span[contains(text(),"${status}")]`, 4000)
+            .click(`//li//span[contains(text(),"${status}")]`)
+            .useCss()
+    }
+}
+
 module.exports = {
+    commands: [createActions],
     elements: {
         addButton: '.movie-add',
         movieForm: '#movie-form',
         titleInput: 'input[name=title]',
-        statusSelect: 'input[placeholer=Status]',
+        statusSelect: 'input[placeholder=Status]',
         yearInput: 'input[name=year]',
         dateInput: 'input[name=release_date]',
         castInput: '.cast',
