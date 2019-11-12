@@ -12,13 +12,8 @@
     <a href="#starting">Starting</a>
 </p>
 
-<<<<<<< HEAD
-# 1
-`docker run --name pgadmin --network=skynet -p 15432:80 -e "PGADMIN_DEFAULT_EMAIL=root@qaninja.io" -e "PGADMIN_DEFAULT_PASSWORD=qaninja" -d dpage/pgadmin4'`
-=======
 ## Motivation
 This repository is about automated tests in NodeJS with Docker, Jenkins and NightwatchJS framework.
->>>>>>> 1ebce6771274a8591414ac05a934774a3a959b2e
 
 ## Installation
 
