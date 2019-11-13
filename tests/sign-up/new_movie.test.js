@@ -37,9 +37,10 @@ module.exports = {
             .createForm()
             .setValue('@titleInput', movieData.title)
             .selectStatus(movieData.status)
-            .setValue('@yearInpt', movieData.year)
-            .setValue('@dataInput', movie.releaseDate)
+            .setValue('@yearInput', movieData.year)
+            .setValue('@dateInput', movieData.releaseDate)
+            .insertCast(movieData.cast)
             .setValue('@plotInput', movieData.plot)
-            .pause(5000)
+            .click('@createButton')
     }
 }
