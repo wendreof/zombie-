@@ -46,5 +46,11 @@ module.exports = {
             .insertCast(movieData.cast)
             .setValue('@plotInput', movieData.plot)
             .click('@createButton')
+    },
+
+    'So, I want to take a look at movie': function(browser) {
+        browser
+            .waitForElementVisible('table tbody', 5000)
+            .assert.containsText('table tbody', movieData.title)
     }
 }
