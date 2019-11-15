@@ -28,7 +28,10 @@ var createActions = {
 
         console.log(fullPath)
 
-        return this.setValue('@uploadInput', fullPath)
+        return this
+            .setValue('@uploadInput', fullPath)
+            .pause(1000)
+            .assert.attributeContains('.picture-src', 'src', 'blob')
     }
 }
 

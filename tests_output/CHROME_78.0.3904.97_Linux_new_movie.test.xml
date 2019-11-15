@@ -5,16 +5,18 @@
 
   <testsuite name="new_movie.test"
     errors="0" failures="0" hostname="" id="" package="new_movie.test" skipped="0"
-    tests="2" time="13.72" timestamp="">
+    tests="2" time="15.86" timestamp="">
   
-    <testcase name="When I try to register a movie" classname="new_movie.test" time="12.38" assertions="2">
+    <testcase name="When I try to register a movie" classname="new_movie.test" time="14.59" assertions="3">
+
+    
 
     
 
     
     </testcase>
   
-    <testcase name="So, I want to take a look at movie" classname="new_movie.test" time="1.340" assertions="2">
+    <testcase name="So, I want to take a look at movie" classname="new_movie.test" time="1.277" assertions="2">
 
     
 

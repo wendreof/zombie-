@@ -16,6 +16,9 @@ module.exports = {
 
     test_settings: {
         default: {
+            globals: {
+                waitForConditionTimeout: 15000
+            },
             desiredCapabilities: {
                 browserName: "Chrome"
             }
