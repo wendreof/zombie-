@@ -17,7 +17,7 @@ module.exports = {
                 'Ian Glen',
                 'Shawn Roberts'
             ],
-            cover: 'resisent-evil-2002.jpg',
+            cover: 'resident-evil-2002.jpg',
             plot: 'The Alice and squad mission is to turn down the Red Queen and colect datas',
         }
 
@@ -45,12 +45,16 @@ module.exports = {
             .setValue('@dateInput', movieData.releaseDate)
             .insertCast(movieData.cast)
             .setValue('@plotInput', movieData.plot)
+            .uploadCover(movieData.cover)
+            .pause(5000)
             .click('@createButton')
     },
 
     'So, I want to take a look at movie': function(browser) {
-        browser
-            .waitForElementVisible('table tbody', 5000)
-            .assert.containsText('table tbody', movieData.title)
+        let movie = browser.page.movie()
+
+        movie
+            .waitForElementVisible('@list', 5000)
+            .assert.containsText('@list', movieData.title)
     }
 }

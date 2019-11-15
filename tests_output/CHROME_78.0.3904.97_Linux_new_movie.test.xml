@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="1">
+            tests="2">
 
   <testsuite name="new_movie.test"
     errors="0" failures="0" hostname="" id="" package="new_movie.test" skipped="0"
-    tests="1" time="7.332" timestamp="">
+    tests="2" time="13.72" timestamp="">
   
-    <testcase name="When I try to register a movie" classname="new_movie.test" time="7.332" assertions="2">
+    <testcase name="When I try to register a movie" classname="new_movie.test" time="12.38" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="So, I want to take a look at movie" classname="new_movie.test" time="1.340" assertions="2">
 
     
 
