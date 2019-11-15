@@ -1,3 +1,5 @@
+var postgre = require('../../lib/db')
+
 let movieData = {}
 
 module.exports = {
@@ -18,6 +20,8 @@ module.exports = {
             cover: 'resisent-evil-2002.jpg',
             plot: 'The Alice and squad mission is to turn down the Red Queen and colect datas',
         }
+
+        postgre.removeByTitle("Resident Evil");
 
         let login = browser.page.login()
 
