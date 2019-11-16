@@ -1,6 +1,6 @@
 module.exports = {
 
-    '@tags': ['404'],
+    '@tags': ['smoke'],
 
     before: function(browser) {
         let login = browser.page.login()

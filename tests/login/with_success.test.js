@@ -1,6 +1,6 @@
 module.exports = {
 
-    '@tags': ['login-with-success'],
+    '@tags': ['smoke'],
 
     'Success login': (browser) => {
 
