@@ -37,25 +37,25 @@ This repository is about automated tests in NodeJS with Docker, Jenkins and Nigh
 
 ## Starting
 
-### Running containers
+- Running containers
 - `docker start pgadmin`
 - `docker start pgdb`
 - `docker start zombie-api`
 - `docker start zombie-web`
 
-### General tests
+- General tests
 - `yarn test` Running all tests
 - `yarn run test:headless ` Running all tests in headless mode
 
-### Login tests
+- Login tests
 - `yarn run test:login` Running login tests
 - `yarn run test:nologin` Running all except login tests
 
-### Search tests
+- Search tests
 - `yarn run test:search` Running  search  tests
 - `yarn run test:nosearch` Running all except search tests
 
-### Sign-up tests
+- Sign-up tests
 - `yarn run test:sign-up` Running sign-up tests
 - `yarn run test:nosign-up` Running all except sign-up tests
 
