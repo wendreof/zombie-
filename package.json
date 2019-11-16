@@ -5,18 +5,15 @@
     "main": "tests/login.test.js",
     "scripts": {
         "test": "./node_modules/.bin/nightwatch",
-
         "test:stage": "./node_modules/.bin/nightwatch --env=stage",
-
+        "test:firefox": "./node_modules/.bin/geckodriver--env=firefox",
+        "test:headless": "./node_modules/.bin/nightwatch --env=headless",
         "test:login": "./node_modules/.bin/nightwatch --group login",
         "test:nologin": "./node_modules/.bin/nightwatch --skipgroup login",
-
         "test:sign-up": "./node_modules/.bin/nightwatch --group sign-up",
         "test:nosign-up": "./node_modules/.bin/nightwatch --skipgroup sign-up",
-
         "test:search": "./node_modules/.bin/nightwatch --group search",
         "test:nosearch": "./node_modules/.bin/nightwatch --skipgroup search",
-
         "start": "nodemon tests/login.test.js"
     },
     "author": "@wendreof",
@@ -26,6 +23,7 @@
         "babel-plugin-add-module-exports": "^1.0.2",
         "babel-preset-es2015": "^6.24.1",
         "chromedriver": "^78.0.0",
+        "geckodriver": "^1.19.1",
         "nightwatch": "^1.2.4",
         "nodemon": "^1.19.4",
         "pg": "^7.12.1"

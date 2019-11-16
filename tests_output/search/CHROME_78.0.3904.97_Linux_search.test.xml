@@ -5,12 +5,12 @@
 
   <testsuite name="search.search.test"
     errors="0" failures="0" hostname="" id="" package="search" skipped="0"
-    tests="2" time="3.682" timestamp="">
+    tests="2" time="3.766" timestamp="">
   
-    <testcase name="When I search for a movie by title" classname="search.search.test" time="1.988" assertions="0">
+    <testcase name="When I search for a movie by title" classname="search.search.test" time="2.252" assertions="0">
     </testcase>
   
-    <testcase name="Then, I must to see the movie at the list" classname="search.search.test" time="1.694" assertions="3">
+    <testcase name="Then, I must to see the movie at the list" classname="search.search.test" time="1.514" assertions="3">
 
     
 

@@ -5,9 +5,9 @@
 
   <testsuite name="login.blank_email.test"
     errors="0" failures="0" hostname="" id="" package="login" skipped="0"
-    tests="1" time="11.24" timestamp="">
+    tests="1" time="14.43" timestamp="">
   
-    <testcase name="Blank e-mail!" classname="login.blank_email.test" time="11.24" assertions="3">
+    <testcase name="Blank e-mail!" classname="login.blank_email.test" time="14.43" assertions="3">
 
     
 

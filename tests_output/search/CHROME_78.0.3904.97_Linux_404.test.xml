@@ -5,12 +5,12 @@
 
   <testsuite name="search.404.test"
     errors="0" failures="0" hostname="" id="" package="search" skipped="0"
-    tests="2" time="3.671" timestamp="">
+    tests="2" time="2.420" timestamp="">
   
-    <testcase name="When I search for a movie not registered" classname="search.404.test" time="2.117" assertions="0">
+    <testcase name="When I search for a movie not registered" classname="search.404.test" time="0.7570" assertions="0">
     </testcase>
   
-    <testcase name="Then, I must to see an alert menssage" classname="search.404.test" time="1.554" assertions="2">
+    <testcase name="Then, I must to see an alert menssage" classname="search.404.test" time="1.663" assertions="2">
 
     
 
