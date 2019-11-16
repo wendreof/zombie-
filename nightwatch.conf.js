@@ -16,10 +16,10 @@ module.exports = {
         start_process: true,
     },
 
-    test_workers: {
-        enabled: true,
-        workers: 2
-    },
+    // test_workers: {
+    //     enabled: true,
+    //     workers: 2
+    // },
 
     test_settings: {
         default: {
@@ -39,17 +39,17 @@ module.exports = {
         headless: {
             launch_url: testURL,
             globals: {
-                waitForConditionTimeout: defaultTimeout
+                waitForConditionTimeout: defaultTimeout // As vezes a conexão com a internet/rede fica lenta
             },
             webdriver: {
                 server_path: chromedriver.path,
                 port: 9515
             },
             desiredCapabilities: {
-                browserName: "Chrome",
+                browserName: "chrome",
                 chromeOptions: {
                     w3c: false,
-                    args: ['--headless', '--no-sandbox']
+                    args: ['--headless', '--no-sandbox', '--disable-dev-shm-usage']
                 }
             }
         },

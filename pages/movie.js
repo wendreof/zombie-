@@ -8,7 +8,7 @@ var createActions = {
         return this
             .click('@statusSelect')
             .useXpath()
-            .waitForElementVisible(`//li//span[contains(text(),"${status}")]`, 4000)
+            .waitForElementVisible(`//li//span[contains(text(),"${status}")]`, 10000)
             .click(`//li//span[contains(text(),"${status}")]`)
             .useCss()
     },
