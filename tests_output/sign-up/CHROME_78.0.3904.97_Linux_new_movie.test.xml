@@ -5,9 +5,9 @@
 
   <testsuite name="sign-up.new_movie.test"
     errors="0" failures="0" hostname="" id="" package="sign-up" skipped="0"
-    tests="2" time="19.81" timestamp="">
+    tests="2" time="21.20" timestamp="">
   
-    <testcase name="When I try to register a movie" classname="sign-up.new_movie.test" time="18.43" assertions="3">
+    <testcase name="When I try to register a movie" classname="sign-up.new_movie.test" time="19.85" assertions="3">
 
     
 
@@ -16,7 +16,7 @@
     
     </testcase>
   
-    <testcase name="Then, I want to take a look at movie" classname="sign-up.new_movie.test" time="1.386" assertions="2">
+    <testcase name="Then, I want to take a look at movie" classname="sign-up.new_movie.test" time="1.349" assertions="2">
 
     
 

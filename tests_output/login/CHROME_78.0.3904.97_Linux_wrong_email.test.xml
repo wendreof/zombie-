@@ -5,9 +5,9 @@
 
   <testsuite name="login.wrong_email.test"
     errors="0" failures="0" hostname="" id="" package="login" skipped="0"
-    tests="1" time="10.90" timestamp="">
+    tests="1" time="17.15" timestamp="">
   
-    <testcase name="Wrong e-mail!" classname="login.wrong_email.test" time="10.90" assertions="3">
+    <testcase name="Wrong e-mail!" classname="login.wrong_email.test" time="17.15" assertions="3">
 
     
 
