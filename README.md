@@ -4,6 +4,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/wendreof/zombie-)](https://github.com/wendreof/zombie-/issues)
 [![GitHub forks](https://img.shields.io/github/forks/wendreof/zombie-)](https://github.com/wendreof/zombie-/network)
 [![GitHub stars](https://img.shields.io/github/stars/wendreof/zombie-)](https://github.com/wendreof/zombie-/stargazers)
+[![GitHub license](https://img.shields.io/github/license/wendreof/zombie-)](https://github.com/wendreof/zombie-/blob/master/LICENSE)
 
 -------
 <p align="center">
