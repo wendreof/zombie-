@@ -1,7 +1,7 @@
 pipeline
 {
   agent {
-    docker { 
+    docker {
       image "node"
     }
   }
@@ -16,7 +16,7 @@ pipeline
 
     stage('TESTS'){
       steps{
-        sh "npm test"
+        sh "npm run test:headless"
       }
     }
 
