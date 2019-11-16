@@ -3,6 +3,7 @@ pipeline
   agent {
     docker {
       image "wendreof/node-wd"
+      args "--network=skynet"
     }
   }
 
