@@ -30,7 +30,14 @@ This repository is about automated tests in NodeJS with Docker, Jenkins and Nigh
 - `docker start pgdb`
 - `docker start zombie-api`
 - `docker start zombie-web`
-- `sudo yarn run test`
+
+- `yarn test` Running all tests
+- `yarn run test:login` Running login tests
+- `yarn run test:nologin` Running all except login tests
+- `yarn run test:search` Running  search  tests
+- `yarn run test:nosearch` Running all except search tests
+- `yarn run test:sign-up` Running sign-up tests
+- `yarn run test:nosign-up` Running all except sign-up tests
 
 ## License
 This project is licensed under the terms of the MIT license. See the LICENSE file.

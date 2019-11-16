@@ -1,10 +1,20 @@
 {
     "name": "zombieplus",
-    "version": "1.0.0",
-    "description": "Projeto de testes automatizados com NightWatchJs",
+    "version": "1.0.1",
+    "description": "Automoted Tests Project with NodeJS, NightWatchJs and Docker.",
     "main": "tests/login.test.js",
     "scripts": {
         "test": "./node_modules/.bin/nightwatch",
+
+        "test:login": "./node_modules/.bin/nightwatch --group login",
+        "test:nologin": "./node_modules/.bin/nightwatch --skipgroup login",
+
+        "test:sign-up": "./node_modules/.bin/nightwatch --group sign-up",
+        "test:nosign-up": "./node_modules/.bin/nightwatch --skipgroup sign-up",
+
+        "test:search": "./node_modules/.bin/nightwatch --group search",
+        "test:nosearch": "./node_modules/.bin/nightwatch --skipgroup search",
+
         "start": "nodemon tests/login.test.js"
     },
     "author": "@wendreof",

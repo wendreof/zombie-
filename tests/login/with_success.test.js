@@ -1,4 +1,7 @@
 module.exports = {
+
+    '@tags': ['login-with-success'],
+
     'Success login': (browser) => {
 
         let login = browser.page.login()
