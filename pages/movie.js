@@ -41,6 +41,7 @@ module.exports = {
         addButton: '.movie-add',
         searchInput: 'input[placeholder^=Pesquisar]',
         searchIcon: '#search-movie',
+        alertDanger: '.alert-danger',
         movieForm: '#movie-form',
         titleInput: 'input[name=title]',
         statusSelect: 'input[placeholder=Status]',

@@ -45,7 +45,7 @@ module.exports = {
 
     },
 
-    'So, I must to see the movie at the list': function(browser) {
+    'Then, I must to see the movie at the list': function(browser) {
         let movie = browser.page.movie()
 
         movie
