@@ -2,7 +2,7 @@ pipeline
 {
   agent {
     docker {
-      image "node"
+      image "wendreof/node-wd"
     }
   }
 
