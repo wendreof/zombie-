@@ -1,14 +1,19 @@
-pipeline {
+pipeline
+{
   agent any
-  stages {
-    stage('BUILD'){
-     steps {
+  stages
+  {
+    stage('BUILD')
+    {
+     steps
+     {
         sh "yarn install"
      }
-
     }
-    stage('TESTS'){3
-      steps {
+    stage('TESTS')
+    {
+      steps
+      {
         sh "yarn test"
       }
     }
