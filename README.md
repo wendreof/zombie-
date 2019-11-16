@@ -17,6 +17,16 @@ This repository is about automated tests in NodeJS with Docker, Jenkins and Nigh
 
 ## Installation
 
+### Pulling images
+- `docker pull dpage/pgadmin4`
+
+- `docker pull postgres`
+
+- `docker pull papitoio/zombie-api`
+
+- `docker pull papitoio/zombie-web`
+
+### Running containers
 - `docker run --name pgadmin --network=skynet -p 15432:80 -e "PGADMIN_DEFAULT_EMAIL=root@qaninja.io" -e "PGADMIN_DEFAULT_PASSWORD=qaninja" -d dpage/pgadmin4`
 
 - `docker run --name pgdb --network=skynet -e "POSTGRES_PASSWORD=qaninja" -p 5432:5432 -v var/lib/postgresql/data -d postgres`
@@ -26,16 +36,26 @@ This repository is about automated tests in NodeJS with Docker, Jenkins and Nigh
 - `docker run --name zombie-web --network=skynet -e "VUE_APP_API=http://localhost:3000" -p 5000:5000 -d papitoio/zombie-web`
 
 ## Starting
+
+### Running containers
 - `docker start pgadmin`
 - `docker start pgdb`
 - `docker start zombie-api`
 - `docker start zombie-web`
 
+### General tests
 - `yarn test` Running all tests
+- `yarn run test:headless ` Running all tests in headless mode
+
+### Login tests
 - `yarn run test:login` Running login tests
 - `yarn run test:nologin` Running all except login tests
+
+### Search tests
 - `yarn run test:search` Running  search  tests
 - `yarn run test:nosearch` Running all except search tests
+
+### Sign-up tests
 - `yarn run test:sign-up` Running sign-up tests
 - `yarn run test:nosign-up` Running all except sign-up tests
 
