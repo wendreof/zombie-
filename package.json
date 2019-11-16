@@ -7,7 +7,7 @@
         "test": "./node_modules/.bin/nightwatch",
         "test:stage": "./node_modules/.bin/nightwatch --env=stage",
         "test:firefox": "./node_modules/.bin/geckodriver--env=firefox",
-        "test:headless": "./node_modules/.bin/nightwatch --skipgroup login --env=headless",
+        "test:headless": "./node_modules/.bin/nightwatch --group login --env=headless",
         "test:login": "./node_modules/.bin/nightwatch --group login",
         "test:nologin": "./node_modules/.bin/nightwatch --skipgroup login",
         "test:sign-up": "./node_modules/.bin/nightwatch --group sign-up",
