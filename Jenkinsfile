@@ -1,6 +1,10 @@
 pipeline
 {
-  agent any
+  agent {
+    docker { 
+      image "node"
+    }
+  }
 
   stages{
 
@@ -9,7 +13,7 @@ pipeline
         sh "npm install"
      }
     }
-    
+
     stage('TESTS'){
       steps{
         sh "npm test"
