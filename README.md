@@ -19,15 +19,6 @@ This repository is about automated tests in NodeJS with Docker, Jenkins and Nigh
 
 ## Installation
 
-Pulling images
-- `docker pull dpage/pgadmin4`
-
-- `docker pull postgres`
-
-- `docker pull papitoio/zombie-api`
-
-- `docker pull papitoio/zombie-web`
-
 Running containers
 - `docker run --name pgadmin --network=skynet -p 15432:80 -e "PGADMIN_DEFAULT_EMAIL=root@qaninja.io" -e "PGADMIN_DEFAULT_PASSWORD=qaninja" -d dpage/pgadmin4`
 
