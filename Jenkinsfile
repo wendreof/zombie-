@@ -1,21 +1,21 @@
 pipeline
 {
   agent any
-  stages
-  {
-    stage('BUILD')
-    {
-     steps
-     {
-        sh "yarn install"
+
+  stages{
+
+    stage('BUILD'){
+     steps{
+        sh "npm install"
      }
     }
-    stage('TESTS')
-    {
-      steps
-      {
-        sh "yarn test"
+    
+    stage('TESTS'){
+      steps{
+        sh "npm test"
       }
     }
+
   }
+
 }
