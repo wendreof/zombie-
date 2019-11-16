@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="404.test"
+    errors="0" failures="0" hostname="" id="" package="404.test" skipped="0"
+    tests="2" time="1.694" timestamp="">
+  
+    <testcase name="When I search for a movie not registered" classname="404.test" time="0.4970" assertions="0">
+    </testcase>
+  
+    <testcase name="Then, I must to see an alert menssage" classname="404.test" time="1.197" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

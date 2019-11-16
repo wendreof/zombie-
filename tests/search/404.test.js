@@ -21,8 +21,10 @@ module.exports = {
     },
 
     'Then, I must to see an alert menssage': function(browser) {
-        browser
+        let movie = browser.page.movie()
+
+        movie
             .waitForElementVisible('@alertDanger', 10000)
-            .assert.containsText('Puxa! não encontramos nada aqui :(')
+            .assert.containsText('@alertDanger', 'Puxa! não encontramos nada aqui :(')
     }
 }
