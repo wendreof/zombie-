@@ -28,6 +28,18 @@ Running containers
 
 - `docker run --name zombie-web --network=skynet -e "VUE_APP_API=http://localhost:3000" -p 5000:5000 -d papitoio/zombie-web`
 
+- `docker run \
+  -u root \ 
+  --rm \ 
+  -d \ 
+  -p 8080:8080 \ 
+  -p 50000:50000 \ 
+  -v jenkins-data:/var/jenkins_home \ 
+  -v /var/run/docker.sock:/var/run/docker.sock \ 
+  jenkinsci/blueocean`
+
+- `docker build -t wendreof/node-wd .`
+
 ## Starting
 
 Running containers
