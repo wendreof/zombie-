@@ -20,7 +20,7 @@ var loginActions = {
 }
 
 module.exports = {
-    url: 'http://localhost:5000/login',
+    url: '/login',
     commands: [loginActions],
     elements: {
         form: '.card-login',

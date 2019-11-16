@@ -21,12 +21,17 @@ module.exports = {
 
     test_settings: {
         default: {
+            launch_url: "http://localhost:5000",
             globals: {
                 waitForConditionTimeout: 15000
             },
             desiredCapabilities: {
                 browserName: "Chrome"
             }
+        },
+
+        stage: {
+            launch_url: "http://somestage.com.br",
         }
     }
 }

@@ -6,6 +6,8 @@
     "scripts": {
         "test": "./node_modules/.bin/nightwatch",
 
+        "test:stage": "./node_modules/.bin/nightwatch --env=stage",
+
         "test:login": "./node_modules/.bin/nightwatch --group login",
         "test:nologin": "./node_modules/.bin/nightwatch --skipgroup login",
 
