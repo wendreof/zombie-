@@ -3,7 +3,7 @@
 const chromedriver = require('chromedriver')
 
 module.exports = {
-    src_folders: ['tests/sign-up'],
+    src_folders: ['tests/search'],
 
     page_objects_path: './pages',
     globals_path: './hooks/globals.js',

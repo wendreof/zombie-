@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="search.test"
+    errors="0" failures="0" hostname="" id="" package="search.test" skipped="0"
+    tests="2" time="2.179" timestamp="">
+  
+    <testcase name="When I search for a movie by title" classname="search.test" time="0.7960" assertions="0">
+    </testcase>
+  
+    <testcase name="So, I must to see the movie at the list" classname="search.test" time="1.383" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

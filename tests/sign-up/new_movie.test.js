@@ -21,7 +21,7 @@ module.exports = {
             plot: 'The Alice and squad mission is to turn down the Red Queen and colect datas',
         }
 
-        postgre.removeByTitle("Resident Evil");
+        postgre.removeByTitle(movieData.title);
 
         let login = browser.page.login()
 

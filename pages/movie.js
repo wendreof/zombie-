@@ -39,6 +39,8 @@ module.exports = {
     commands: [createActions],
     elements: {
         addButton: '.movie-add',
+        searchInput: 'input[placeholder^=Pesquisar]',
+        searchIcon: '#search-movie',
         movieForm: '#movie-form',
         titleInput: 'input[name=title]',
         statusSelect: 'input[placeholder=Status]',
@@ -48,6 +50,7 @@ module.exports = {
         plotInput: 'textarea[name=overview]',
         uploadInput: '#upcover',
         createButton: '#create-movie',
-        list: 'table tbody'
+        list: 'table tbody',
+        tr: 'table tbody tr'
     }
 }
