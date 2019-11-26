@@ -16,17 +16,17 @@ module.exports = {
         start_process: true,
     },
 
-    // test_workers: {
-    //     enabled: true,
-    //     workers: 2
-    // },
-
-    screenshots: {
+    test_workers: {
         enabled: true,
-        on_failure: true,
-        on_error: true,
-        path: "tests_output/"
+        workers: 4
     },
+
+    // screenshots: {
+    //     enabled: true,
+    //     on_failure: true,
+    //     on_error: true,
+    //     path: "tests_output/"
+    // },
 
     test_settings: {
         default: {
