@@ -18,7 +18,7 @@ pipeline
     stage('TESTS'){
       steps{
         sh "npm run test:headless"
-        junit testResults: "tests_result/**/*.xml"
+        junit testResults: "tests_output/**/*.xml"
       }
     }
 
