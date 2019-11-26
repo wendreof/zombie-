@@ -21,6 +21,13 @@ module.exports = {
     //     workers: 2
     // },
 
+    screenshots: {
+        enabled: true,
+        on_failure: true,
+        on_error: true,
+        path: "tests_output/"
+    },
+
     test_settings: {
         default: {
             launch_url: testURL,
