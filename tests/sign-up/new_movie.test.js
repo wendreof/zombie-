@@ -50,7 +50,7 @@ module.exports = {
             .click('@createButton')
     },
 
-    'Then, I want to take a look at movie': function(browser) {
+    'Then I want to take a look at movie': function(browser) {
         let movie = browser.page.movie()
 
         movie
