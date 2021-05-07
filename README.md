@@ -1,6 +1,7 @@
 # ZombiePlus
 
 [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fwendreolf)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fwendreof%2Fzombie-%2F)
+[![wakatime](https://wakatime.com/badge/github/wendreof/zombie-.svg)](https://wakatime.com/badge/github/wendreof/zombie-)
 [![GitHub issues](https://img.shields.io/github/issues/wendreof/zombie-)](https://github.com/wendreof/zombie-/issues)
 [![GitHub forks](https://img.shields.io/github/forks/wendreof/zombie-)](https://github.com/wendreof/zombie-/network)
 [![GitHub stars](https://img.shields.io/github/stars/wendreof/zombie-)](https://github.com/wendreof/zombie-/stargazers)
